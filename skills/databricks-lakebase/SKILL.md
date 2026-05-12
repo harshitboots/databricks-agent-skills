@@ -250,6 +250,18 @@ Get SP client ID: `databricks apps get <APP_NAME> --profile <PROFILE>` → `serv
 **Data API:** PostgREST-compatible HTTP CRUD on Postgres tables. See [connectivity.md](references/connectivity.md).
 **Synced Tables:** Sync Delta tables into Lakebase. See [synced-tables.md](references/synced-tables.md).
 
+## PostgreSQL Extensions
+
+Lakebase supports PostgreSQL extensions (e.g., `pgvector` for vector embeddings, `pg_stat_statements` for query statistics). See the [full list of supported extensions](https://docs.databricks.com/aws/en/oltp/projects/extensions).
+
+```sql
+-- List available extensions
+SELECT * FROM pg_available_extensions ORDER BY name;
+
+-- Install an extension
+CREATE EXTENSION IF NOT EXISTS <extension_name>;
+```
+
 ## Troubleshooting
 
 | Error | Solution |
