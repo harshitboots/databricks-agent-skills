@@ -6,4 +6,7 @@
 /skills/databricks-model-serving/ @databricks/eng-apps-devex
 /skills/databricks-jobs/ @lennartkats-db @camielstee-db
 /skills/databricks-pipelines/ @lennartkats-db @camielstee-db
+
+/experimental/ @lennartkats-db @simonfaltum @calreynolds @dustinvannoy-db
+
 /.github/CODEOWNERS @lennartkats-db @simonfaltum @fjakobs
